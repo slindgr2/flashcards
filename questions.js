@@ -1,23 +1,23 @@
 var questions = [
     {
-	question: 'What is the answer to this first question?',
-	options: ['This choice', 'This other choice', 'This yet another choice'],
-	answer: ['This choice'],
+	question: 'What animal is this?',
+	options: ['Cat', 'Dog', 'Mouse'],
+	answer: ['Cat'],
     },
     {
-	question: 'What is the answer to this second question?',
-	options: ['This choice', 'This other choice', 'This yet another choice'],
-	answer: ['This choice'],
+	question: 'What type of car is this?',
+	options: ['Mustang', 'Corvette', 'Challenger'],
+	answer: ['Corvette'],
     },
     {
-	question: 'What is the answer to this third question?',
-	options: ['This choice', 'This other choice', 'This yet another choice'],
-	answer: ['This choice'],
+	question: 'What sport is this?',
+	options: ['Football', 'Hockey', 'Basketball'],
+	answer: ['Football'],
     },
     {
-	question: 'What is the answer to this fourth question?',
-	options: ['This choice', 'This other choice', 'This yet another choice'],
-	answer: ['This choice'],
+	question: 'What color is this?',
+	options: ['Red', 'Green', 'Blue'],
+	answer: ['Blue'],
     },
     {
 	question: 'What is the answer to this fifth question?',
