@@ -2,7 +2,6 @@
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
 
-var z = 0;
 var y = 0;
 var x = 0;
 function post_question() {
@@ -40,14 +39,14 @@ function post_question() {
 function correct() {
   document.getElementById('questions') .innerHTML = 'correct';
   document.getElementById('number_correct') .innerHTML = y + 1;
-  document.getElementById('number_asked') .innerHTML = z + 1;
+  document.getElementById('number_asked') .innerHTML = x;
   document.getElementById('button1') .disabled = true;
   document.getElementById('button2') .disabled = true;
   document.getElementById('button3') .disabled = true;
   wait();
 }
 function incorrect() {
-  document.getElementById('number_asked') .innerHTML = z + 1;
+  document.getElementById('number_asked') .innerHTML = x;
   document.getElementById('questions') .innerHTML = 'incorrect';
   document.getElementById('button1') .disabled = true;
   document.getElementById('button2') .disabled = true;
