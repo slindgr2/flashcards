@@ -49,6 +49,6 @@ function incorrect() {
   wait();
 }
 function wait() {
-  window.setTimeout(post_question, 3000);
+  window.setTimeout(post_question, 1500);
 }
 post_question();
