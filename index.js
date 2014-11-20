@@ -16,12 +16,12 @@ function post_question() {
   } else {
     document.getElementById('button1') .addEventListener('click', incorrect);
   }
-  if (questions[x].answer[0] === questions[x].options[0]) {
+  if (questions[x].answer[0] === questions[x].options[1]) {
     document.getElementById('button2') .addEventListener('click', correct);
   } else {
     document.getElementById('button2') .addEventListener('click', incorrect);
   }
-  if (questions[x].answer[0] === questions[x].options[0]) {
+  if (questions[x].answer[0] === questions[x].options[2]) {
     document.getElementById('button3') .addEventListener('click', correct);
   } else {
     document.getElementById('button3') .addEventListener('click', incorrect);
