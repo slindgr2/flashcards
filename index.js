@@ -2,6 +2,7 @@
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
 
+var y = 0;
 var x = 0;
 function post_question() {
   document.getElementById('questions') .innerHTML = questions[x].question;
@@ -11,12 +12,12 @@ function post_question() {
   document.getElementById('button2') .removeEventListener('click', incorrect);
   document.getElementById('button3') .removeEventListener('click', correct);
   document.getElementById('button3') .removeEventListener('click', incorrect);
-  if (questions[x].answer[0] === questions[x].options[0]) {
+  if  (questions[x].answer[0] === questions[x].options[0] ) {
     document.getElementById('button1') .addEventListener('click', correct);
   } else {
     document.getElementById('button1') .addEventListener('click', incorrect);
   }
-  if (questions[x].answer[0] === questions[x].options[1]) {
+  if (questions[x].answer[0] === questions[x].options[1] ) {
     document.getElementById('button2') .addEventListener('click', correct);
   } else {
     document.getElementById('button2') .addEventListener('click', incorrect);
@@ -26,6 +27,7 @@ function post_question() {
   } else {
     document.getElementById('button3') .addEventListener('click', incorrect);
   }
+    
   document.getElementById('button1') .innerHTML = questions[x].options[0];
   document.getElementById('button2') .innerHTML = questions[x].options[1];
   document.getElementById('button3') .innerHTML = questions[x].options[2];
@@ -36,12 +38,15 @@ function post_question() {
 }
 function correct() {
   document.getElementById('questions') .innerHTML = 'correct';
+  document.getElementById('number_correct') .innerHTML = 'y+1';
+  document.getElementById('number_asked') .innerHTML = 'x+1';
   document.getElementById('button1') .disabled = true;
   document.getElementById('button2') .disabled = true;
   document.getElementById('button3') .disabled = true;
   wait();
 }
 function incorrect() {
+  document.getElementById('number_asked') .innerHTML = 'x+1';
   document.getElementById('questions') .innerHTML = 'incorrect';
   document.getElementById('button1') .disabled = true;
   document.getElementById('button2') .disabled = true;
