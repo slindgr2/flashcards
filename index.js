@@ -43,6 +43,7 @@ function correct() {
   document.getElementById('button1') .disabled = true;
   document.getElementById('button2') .disabled = true;
   document.getElementById('button3') .disabled = true;
+  y = y + 1;
   wait();
 }
 function incorrect() {
