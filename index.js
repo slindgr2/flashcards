@@ -39,15 +39,15 @@ function post_question() {
 }
 function correct() {
   document.getElementById('questions') .innerHTML = 'correct';
-  document.getElementById('number_correct') .innerHTML = 'y + 1';
-  document.getElementById('number_asked') .innerHTML = 'z + 1';
+  document.getElementById('number_correct') .innerHTML = y + 1;
+  document.getElementById('number_asked') .innerHTML = z + 1;
   document.getElementById('button1') .disabled = true;
   document.getElementById('button2') .disabled = true;
   document.getElementById('button3') .disabled = true;
   wait();
 }
 function incorrect() {
-  document.getElementById('number_asked') .innerHTML = 'z + 1';
+  document.getElementById('number_asked') .innerHTML = z + 1;
   document.getElementById('questions') .innerHTML = 'incorrect';
   document.getElementById('button1') .disabled = true;
   document.getElementById('button2') .disabled = true;
